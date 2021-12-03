@@ -1,9 +1,5 @@
 ## Frontend Developer Interview Q&A
-<style type="text/css">
-  li {
-  font-size: 15px;
-}
-</style>
+
 <ol>
 	<li>프런트엔드 빌드 시스템에 대해서 설명해보세요.</li><br/>
 	<ol>
