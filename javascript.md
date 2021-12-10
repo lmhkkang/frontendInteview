@@ -5,6 +5,7 @@
 >AJAX (Asynchronous Javascript And XML)   비동기식 자바스크립트와 xml
 - 자바스크립트를 이용해 서버와 브라우져가 비동기 방식으로 데이터를 교환할 수 있는 통신 기능
 - 브라우져가 가지고 있는 XMLHttpRequest 객체로 페이지 새로고침을 하지 않고 페이지의 일부만 데이터를 로드하는 기법.
+<br/>
 ![ajax비동기통신](https://user-images.githubusercontent.com/45140764/145498412-d00a25f7-2e10-4849-a282-910aef710832.png)
 
 #### 비동기 통신이란??
