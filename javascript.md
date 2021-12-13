@@ -25,7 +25,8 @@
 [그림1]과 같이 이벤트 버블링은 html 트리구조에서 하위 요소(element)에서 발생한 이벤트가 위 요소(element)로 이벤트를 전달하는 것을 의미한다.
 
 - **이벤트 캡쳐링(Event Capturing)**
->이벤트 캡쳐는 이벤트 버블링과 반대 방향으로 진행되는 이벤트 전파 방식입니다.
+>이벤트 캡쳐는 이벤트 버블링과 반대 방향으로 진행되는 이벤트 전파 방식입니다.<br/>
+
 [그림2]
 ![event_capturing](https://user-images.githubusercontent.com/45140764/145737558-4b82d600-064c-43fa-9ca9-ac304139c3f2.png)
 
@@ -38,7 +39,7 @@ div.addEventListener('click', logEvent, {
 ```
 
 - **이벤트 위임 (Evevnt Delegation)**
-> 하위 요소에 각각 이벤트를 붙이지 않고 상위 요소에서 하위 요소의 이벤트들을 제어하는 방식
+> 하위 요소에 각각 이벤트를 붙이지 않고 상위 요소에서 하위 요소의 이벤트들을 제어하는 방식<br/>
 
 [그림3]
 ![event_delegation](https://user-images.githubusercontent.com/45140764/145750775-da119cc9-7982-4b25-9ce7-fa7d11db858c.png)
@@ -74,8 +75,8 @@ ul.addEventListener('click', function(event) {
 [코드2]를 보면 상위 태그인 `ul`태그를 `eventListner`에 등록 시킨다. 이렇게 되면 **이벤트 버블링**을 이용하여 하위에서 발생된 이벤트를 상위 태그에서 감지 할 수 있다. <br/>
 -- 결과적으로 동적으로 추가된 `체크박스`를 클릭하면  `alert('clicked');` 코드가 동작을 한다.
 
-### 3. 실행 컨텍스트 (Execution Context)
-### 4. 스코프 (Scope)
+### 3. 스코프 (Scope)
+### 4. 실행 컨텍스트 (Execution Context)
 ### 5. 호이스팅 (Hoisting)
 ### 6. 클로저 (Closure)
 ### 7. 네이티브 객체 vs 호스트 객체
