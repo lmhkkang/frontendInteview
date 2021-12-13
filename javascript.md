@@ -77,6 +77,15 @@ ul.addEventListener('click', function(event) {
 -- 결과적으로 동적으로 추가된 `체크박스`를 클릭하면  `alert('clicked');` 코드가 동작을 한다.
 
 ### 3. 스코프 (Scope)
+>  JavaScript에서 스코프란 <b>변수를 찾기위한 범위<b/>를 뜻한다.
+#### 스코프의 종류
+- 전역 스코프 (Global Scope)
+	-  코드 어디에서든지 참조 가능
+	- ex> window 객체, 그 외 전역으로 도 선언 가능.
+- 지역 스코프 (Local Scope)
+	- 지역(함수) 내에서 선언된 변수이며 그 지역과 그 지역의 하부 지역에서만 참조할 수 있다.
+	
+
 ### 4. 실행 컨텍스트 (Execution Context)
 ### 5. 호이스팅 (Hoisting)
 ### 6. 클로저 (Closure)
