@@ -10,6 +10,7 @@
 #### 비동기 통신이란??
 [그림1]
 ![동기비동기](https://user-images.githubusercontent.com/45140764/145501197-2bed7a6e-610d-41ce-aafc-35d525411544.png)
+<br/>
 #### [그림1]과 같이 ABC의 업무 프로세스가 있다고 가정해보자.
 <b>동기 방식</b>은 A B C 프로세스가 실행될 때 순차적으로 A의 프로세스가 끝나고 B 프로세스가 시작된다.<br/>
 <b>비동기 방식</b>은 A B C 프로세스가 실행될 때 순차적으로 실행되나 B가 A의 프로세스를 기다리지 않고 시작된다. 
@@ -21,7 +22,7 @@
 
 [그림1]
 ![event_bubbling](https://user-images.githubusercontent.com/45140764/145736547-50e426bd-69a0-499d-9627-36c407e68971.png)
-
+<br/>
 [그림1]과 같이 이벤트 버블링은 html 트리구조에서 하위 요소(element)에서 발생한 이벤트가 위 요소(element)로 이벤트를 전달하는 것을 의미한다.
 
 - **이벤트 캡쳐링(Event Capturing)**
