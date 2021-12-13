@@ -4,11 +4,11 @@
 ### 1.  Ajax
 >AJAX (Asynchronous Javascript And XML)   비동기식 자바스크립트와 xml
 - 자바스크립트를 이용해 서버와 브라우져가 비동기 방식으로 데이터를 교환할 수 있는 통신 기능
-- 브라우져가 가지고 있는 XMLHttpRequest 객체로 페이지 새로고침을 하지 않고 페이지의 일부만 데이터를 로드하는 기법.
+- 브라우져가 가지고 있는 XMLHttpRequest 객체로 페이지 새로고침을 하지 않고 페이지의 일부만 데이터를 로드하는 기법.<br/>
 ![ajax비동기통신](https://user-images.githubusercontent.com/45140764/145498412-d00a25f7-2e10-4849-a282-910aef710832.png)
 
 #### 비동기 통신이란??
-[그림1]
+[그림1]<br/>
 ![동기비동기](https://user-images.githubusercontent.com/45140764/145501197-2bed7a6e-610d-41ce-aafc-35d525411544.png)
 <br/>
 #### [그림1]과 같이 ABC의 업무 프로세스가 있다고 가정해보자.
@@ -28,7 +28,7 @@
 - **이벤트 캡쳐링(Event Capturing)**
 >이벤트 캡쳐는 이벤트 버블링과 반대 방향으로 진행되는 이벤트 전파 방식입니다.<br/>
 
-[그림2]
+[그림2]<br/>
 ![event_capturing](https://user-images.githubusercontent.com/45140764/145737558-4b82d600-064c-43fa-9ca9-ac304139c3f2.png)
 
 [그림2]처럼 특정 이벤트가 발생했을 때 최상위 요소인 body 태그에서 해당 태그를 찾아 내려갑니다.<br/>
@@ -42,7 +42,7 @@ div.addEventListener('click', logEvent, {
 - **이벤트 위임 (Evevnt Delegation)**
 > 하위 요소에 각각 이벤트를 붙이지 않고 상위 요소에서 하위 요소의 이벤트들을 제어하는 방식<br/>
 
-[그림3]
+[그림3]<br/>
 ![event_delegation](https://user-images.githubusercontent.com/45140764/145750775-da119cc9-7982-4b25-9ce7-fa7d11db858c.png)
 <br/>
 [그림3]과 같이 html이 체크 박스가 두개 있는 트리구조 일때 input 태그에 `eventListner`를 추가하였다고
