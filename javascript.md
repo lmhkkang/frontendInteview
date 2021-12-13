@@ -58,7 +58,7 @@ inputs.forEach(function(input) {
 ```
 
 이후 동적으로 `<li><input type="checkbox"/> </li>`을  추가하였다고 가정해보자 (`append()`)<br/>
-[그림4]
+[그림4]<br/>
 ![event_delegation2](https://user-images.githubusercontent.com/45140764/145753652-0de32970-bbde-4f59-a817-3be1ffa3e8fc.png)
 
 [그림4]와 같이 추가 되었을 때 [코드1]의 코드 만으로는 동적으로 새로 추가된 `체크박스`는 `eventListner`의 영향이 전혀 없다. 즉, 새로 추가된 `체크박스`를 클릭해도 `alert('clicked')` 코드가 동작하지 않는다.
