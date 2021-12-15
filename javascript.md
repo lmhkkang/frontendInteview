@@ -77,7 +77,8 @@ ul.addEventListener('click', function(event) {
 -- 결과적으로 동적으로 추가된 `체크박스`를 클릭하면  `alert('clicked');` 코드가 동작을 한다.
 
 ### 3. 스코프 (Scope)
->  JavaScript에서 스코프란 <b>변수를 찾기위한 범위<b/>를 뜻한다.
+>  JavaScript에서 스코프란 <b>변수를 찾기위한 범위</b>를 뜻한다.
+
 #### 스코프의 종류
 - 전역 스코프 (Global Scope)
 	-  코드 어디에서든지 참조 가능
@@ -89,6 +90,7 @@ ul.addEventListener('click', function(event) {
 - **렉시컬 스코핑(lexical soping)**
 	- 렉시컬 스코핑을 찾다보면 이런 아래와 같은 예제들이 나온다
 <br/>
+
 `wrapper()` 실행시 콘솔에 어떤 값이 찍힐까요?
 
 ```js
