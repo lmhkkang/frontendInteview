@@ -84,7 +84,25 @@ ul.addEventListener('click', function(event) {
 	- ex> window 객체, 그 외 전역으로 도 선언 가능.
 - 지역 스코프 (Local Scope)
 	- 지역(함수) 내에서 선언된 변수이며 그 지역과 그 지역의 하부 지역에서만 참조할 수 있다.
-	
+
+#### Scope에 대해 찾아보다가 흥미로운 특징 발견, 바로 렉시컬 스코핑
+- **렉시컬 스코핑(lexical soping)**
+	- 렉시컬 스코핑을 찾다보면 이런 아래와 같은 예제들이 나온다
+<br/>
+`wrapper()` 실행시 콘솔에 어떤 값이 찍힐까요?
+```js
+var name =  'zero';
+function  log()  {
+	console.log(name); 
+} 
+function  wrapper()  { 
+	var name =  'nero'; 
+	log(); 
+} 
+wrapper();
+```
+"정답은 `nero`일 것 같지만 `zero` 입니다~" 라고 한다. 어떤 똥멍청이가 `var name`을 변수로 선언 해놓고 아래에서 똑같은 변수명을 선언하겠냐만 `lexcial scoping`을 설명하려면 그럴듯한 예제가 저것 밖에 없는 것 같다. <br/>
+결론: 함수 `wrapper`를 선언 할 때, 함순 내부 변수는 상위 범위부터 제일 가까운 변수를 참조하게 된다. 전역 변수가 제일 상위범위의 변수로부터 가깝기 때문에  전역 변수에 할당된 `zero`값을 참조하게됨.
 
 ### 4. 실행 컨텍스트 (Execution Context)
 ### 5. 호이스팅 (Hoisting)
