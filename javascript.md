@@ -109,6 +109,16 @@ wrapper();
 결론: 함수 `wrapper`를 선언 할 때, 함순 내부 변수는 상위 범위부터 제일 가까운 변수를 참조하게 된다. 전역 변수가 제일 상위범위의 변수로부터 가깝기 때문에  전역 변수에 할당된 `zero`값을 참조하게됨.
 
 ### 4. 실행 컨텍스트 (Execution Context)
+> 실행 컨텍스트란 **우리가 작성한 코드가 실행되는 환경**을 말하며, scope , hoisting, this, function, closure 등의 동작원리를 담고 있는 자바스크립트의 핵심원리를 말한다.
+#### 실행 컨텍스트의 두종류
+- 글로벌 실행 컨텍스트(Global Execution Context)
+	- 함수 내에서 실행되는 코드가 아니라면 모두 `Global Context`에서 실행됨
+	- `Global Context`에 있는 실행 가능한 코드는 모두 스택에 쌓이며 `LIFO(Last in First out)` 로 실행됨.
+- 함수 실행 컨텍스트(Functional Execution Context)
+	- 선언된 함수가 호출될 시 `Functional Context`가 생성되며 함수안의 코드가 모두 실행되고 종료되면 `Functional Context`가 소멸된다. (`Functional Context`를 가지고 있지만 호출시 **생성** 된다)
+	- `closure`을 사용한다면 scope가 소멸하지 않고 이용할 수 있다.
+
+
 ### 5. 호이스팅 (Hoisting)
 ### 6. 클로저 (Closure)
 ### 7. 네이티브 객체 vs 호스트 객체
